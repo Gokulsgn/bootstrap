@@ -1,0 +1,100 @@
+/* Hero Section Styling */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://source.unsplash.com/1600x900/?grilled-chicken') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .hero h1 {
+    font-size: 3.5rem;
+    color: #ffcc00;
+  }
+  
+  .hero p {
+    font-size: 1.25rem;
+    color: #ddd;
+  }
+  
+  .hero .btn-primary {
+    background-color: #ff4500;
+    border-color: #ff4500;
+  }
+  
+  .hero .btn-outline-light:hover {
+    background-color: #ffcc00;
+    border-color: #ffcc00;
+    color: #333;
+  }
+  
+  /* Button Hover Effects */
+  .hero .btn-primary:hover {
+    background-color: #ff5714;
+    border-color: #ff5714;
+  }
+  
+  .hero .btn-outline-light {
+    border-width: 2px;
+    color: #ffcc00;
+  }
+ /* Menu Highlights Section */
+.menu-highlights {
+  background-color: #222;
+}
+
+.menu-highlights h2 {
+  color: #ffcc00;
+}
+
+.menu-highlights .card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.menu-highlights .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.menu-highlights .card-title {
+  color: #ffcc00;
+}
+
+.menu-highlights .card-text {
+  color: #ddd;
+}
+
+.menu-highlights .btn-primary {
+  background-color: #ff4500;
+  border-color: #ff4500;
+}
+
+.menu-highlights .btn-primary:hover {
+  background-color: #ff5714;
+  border-color: #ff5714;
+}
+/* Why Choose Us Section */
+.why-choose-us {
+  background-color: #222;
+}
+
+.why-choose-us h2 {
+  color: #ffcc00;
+}
+
+.feature-card {
+  background-color: #333;
+  color: #ddd;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.feature-card h5 {
+  color: #ffcc00;
+}
+
+.feature-card p {
+  color: #bbb;
+}
