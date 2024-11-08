@@ -119,5 +119,233 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Special Offers Section -->
+<section class="special-offers py-5 text-center">
+  <div class="container">
+    <h2 class="display-4 text-warning mb-4">Special Offers</h2>
+    <p class="lead mb-4">Exclusive deals for a limited time. Don't miss out!</p>
+    <div class="offer-banner p-4 rounded mb-5">
+      <h3 class="text-dark">Get 20% Off on Your First Order!</h3>
+      <p class="text-dark">Use code <strong>WELCOME20</strong> at checkout.</p>
+    </div>
+
+    <!-- Countdown Timer -->
+    <div class="countdown-timer mb-5">
+      <h4 class="text-warning">Hurry! Offer ends in:</h4>
+      <div class="d-flex justify-content-center">
+        <div class="timer-box mx-2">
+          <span id="days" class="time">00</span>
+          <small>Days</small>
+        </div>
+        <div class="timer-box mx-2">
+          <span id="hours" class="time">00</span>
+          <small>Hours</small>
+        </div>
+        <div class="timer-box mx-2">
+          <span id="minutes" class="time">00</span>
+          <small>Minutes</small>
+        </div>
+        <div class="timer-box mx-2">
+          <span id="seconds" class="time">00</span>
+          <small>Seconds</small>
+        </div>
+      </div>
+    </div>
+    <a href="#" class="btn btn-primary btn-lg">Order Now</a>
+  </div>
+</section>
+
+<!-- Font Awesome Icons (for icons) -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Countdown Timer Script -->
+<script>
+  // Countdown Timer JavaScript
+  const countdownDate = new Date().getTime() + (3 * 24 * 60 * 60 * 1000); // 3 days from now
+
+  const countdownInterval = setInterval(function() {
+    const now = new Date().getTime();
+    const timeLeft = countdownDate - now;
+
+    const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+    document.getElementById("days").innerText = days;
+    document.getElementById("hours").innerText = hours;
+    document.getElementById("minutes").innerText = minutes;
+    document.getElementById("seconds").innerText = seconds;
+
+    if (timeLeft < 0) {
+      clearInterval(countdownInterval);
+      document.querySelector(".countdown-timer").innerHTML = "<h4 class='text-warning'>Offer has expired!</h4>";
+    }
+  }, 1000);
+</script>
+
+
+<!-- About Us Section -->
+<section class="about-us py-5">
+  <div class="container text-center">
+    <h2 class="display-4 text-warning mb-4">About Us</h2>
+    <p class="lead mb-5">Welcome to Chicken Hut, where flavor meets quality. We’re passionate about bringing you the best, most delicious chicken dishes made from the freshest ingredients. Our story began with a simple idea — to make meals that make people happy!</p>
+    <div class="row">
+      <div class="col-md-6 mb-4">
+        <img src="https://source.unsplash.com/600x400/?restaurant,team" class="img-fluid rounded shadow" alt="Our Team">
+      </div>
+      <div class="col-md-6">
+        <h3 class="text-warning mb-4">Our Core Values</h3>
+        <div class="row">
+          <!-- Value 1 -->
+          <div class="col-6 mb-3">
+            <div class="value-card p-3 rounded text-center">
+              <i class="fas fa-heart fa-2x text-warning mb-3"></i>
+              <h5 class="text-warning">Passion</h5>
+              <p>Our passion for great food and service drives us to exceed expectations.</p>
+            </div>
+          </div>
+          <!-- Value 2 -->
+          <div class="col-6 mb-3">
+            <div class="value-card p-3 rounded text-center">
+              <i class="fas fa-leaf fa-2x text-warning mb-3"></i>
+              <h5 class="text-warning">Quality</h5>
+              <p>We are committed to using only the freshest and highest-quality ingredients.</p>
+            </div>
+          </div>
+          <!-- Value 3 -->
+          <div class="col-6 mb-3">
+            <div class="value-card p-3 rounded text-center">
+              <i class="fas fa-handshake fa-2x text-warning mb-3"></i>
+              <h5 class="text-warning">Community</h5>
+              <p>We strive to be a positive presence and support our local community.</p>
+            </div>
+          </div>
+          <!-- Value 4 -->
+          <div class="col-6 mb-3">
+            <div class="value-card p-3 rounded text-center">
+              <i class="fas fa-thumbs-up fa-2x text-warning mb-3"></i>
+              <h5 class="text-warning">Customer Satisfaction</h5>
+              <p>Your satisfaction is our top priority, and we work hard to deliver excellence.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Font Awesome Icons (for icons) -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Location & Contact Information Section -->
+<section class="location-contact py-5">
+  <div class="container text-center">
+    <h2 class="display-4 text-warning mb-5">Location & Contact Information</h2>
+    <div class="row">
+      <!-- Location Map -->
+      <div class="col-md-6 mb-4">
+        <div class="map-container rounded shadow">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345097434!2d144.95373531550434!3d-37.81627974202168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727bf9d98e7c4e!2sChicken%20Hut!5e0!3m2!1sen!2sau!4v1611764365329!5m2!1sen!2sau" 
+            width="100%" 
+            height="300" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy"></iframe>
+        </div>
+      </div>
+
+      <!-- Contact Information -->
+      <div class="col-md-6 mb-4">
+        <h4 class="text-warning">Get in Touch</h4>
+        <p class="mb-3">Feel free to reach out for any inquiries or reservations.</p>
+        <div class="contact-info mb-4">
+          <p><i class="fas fa-map-marker-alt text-warning"></i> 123 Food Street, City Center, Metropolis</p>
+          <p><i class="fas fa-phone-alt text-warning"></i> +1 (123) 456-7890</p>
+          <p><i class="fas fa-envelope text-warning"></i> contact@chickenhut.com</p>
+        </div>
+        
+        <!-- Contact Form -->
+        <form>
+          <div class="form-group">
+            <input type="text" class="form-control bg-dark text-light" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control bg-dark text-light" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control bg-dark text-light" rows="3" placeholder="Your Message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning btn-block">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Font Awesome Icons (for icons) -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<!-- Footer Section -->
+<footer class="footer bg-dark text-light py-4">
+  <div class="container">
+    <div class="row">
+      <!-- About Us Section -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-warning">About Chicken Hut</h5>
+        <p>Delicious, high-quality chicken dishes made with passion and the freshest ingredients. Serving the community one meal at a time.</p>
+      </div>
+
+      <!-- Quick Links Section -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-warning">Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light">Home</a></li>
+          <li><a href="#menu" class="text-light">Menu</a></li>
+          <li><a href="#about" class="text-light">About Us</a></li>
+          <li><a href="#contact" class="text-light">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media Section -->
+      <div class="col-md-4 mb-3">
+        <h5 class="text-warning">Follow Us</h5>
+        <div class="social-icons">
+          <a href="#" class="text-light mr-3"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="#" class="text-light mr-3"><i class="fab fa-twitter fa-2x"></i></a>
+          <a href="#" class="text-light mr-3"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="#" class="text-light mr-3"><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Copyright Section -->
+      <div class="col-12 text-center mt-3">
+        <p class="text-light mb-0">&copy; 2024 Chicken Hut. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Font Awesome Icons (for icons) -->
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
 </body>
 </html>
